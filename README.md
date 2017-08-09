@@ -89,7 +89,7 @@ The simplest way which I found is copying the Staging Deloyment Key to `MainApli
   protected List<ReactPackage> getPackages() {
     return Arrays.<ReactPackage>asList(
         ...
-        new CodePush('wxdasdasdasdefdfdxvcdsdfadasd', this, BuildConfig.DEBUG), // Add/change this line.
+        new CodePush(' W5pVzlovWIMGTU9c6xVs5PN7dkVYef71e4ff-3436-47c7-82b6-c0156c503b2c', this, BuildConfig.DEBUG), // Add you Stating Deoylement Key  this line.
         ...
     );
 }
