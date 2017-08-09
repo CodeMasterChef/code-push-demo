@@ -23,13 +23,18 @@ After that, we can check it with bellow command:
 
 `code-push app list`
 
-![text alt](https://raw.githubusercontent.com/gitvani/code-push-demo/master/images/code-push-02.png)
+![text alt](https://raw.githubusercontent.com/gitvani/code-push-demo/master/images/code-push-02.1.png)
+
+# Step 4: Config Moble App
+## 4.1: Find Staging Key and Production Key by bellow command: 
+
+`code-push deployment list VaniCodePushDemo -k`
 
 
 Some useful command: 
 http://cmichel.io/code-push-cheat-sheet/
 
-`code-push deployment list VaniCodePushDemo -k`
+
 
 code-push release [appName] [updateContentsPath] [targetBinaryVersion]
 
