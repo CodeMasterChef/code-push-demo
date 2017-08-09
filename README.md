@@ -76,7 +76,7 @@ codepushdemo = codePush(codePushOptions)(codepushdemo);
 AppRegistry.registerComponent('codepushdemo', () => codepushdemo);
   
 ```
-
+With this code, when you close application and open again, a Update Alert will be show. If you chose 'Yes', the application will be update now. After that, you need close application and open it again.
 
 ## 4.3: Config Android app: 
 
@@ -98,11 +98,14 @@ The simplest way which I found is copying the Staging Deloyment Key to `MainApli
 There are many way to config. The hard way is follow this [guide](https://github.com/Microsoft/react-native-code-push#supported-react-native-platforms) : You have to add Staging mode for Xcode.
 
 The simplest way which I found is using Staging Deloyment Key for **Release** mode in XCode: 
+- Select the Build Settings tab.
+- Click the + button on the toolbar and select Add User-Defined Setting
+
+![text alt](https://cloud.githubusercontent.com/assets/116461/15764165/a16dbe30-28dd-11e6-94f2-fa3b7eb0c7de.png)
 
 - Name this new setting something like **CODEPUSH_KEY**, expand it, and specify your Staging deployment key for the Release config:
 
-![text alt](https://raw.githubusercontent.com/gitvani/code-push-demo/master/images/code-push-04.png)
-
+![text alt](https://raw.githubusercontent.com/gitvani/code-push-demo/master/images/code-push-04.1.png)
 
 
 
