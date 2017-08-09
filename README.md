@@ -36,17 +36,13 @@ Tip: For simple, we should use only the Staging Deployment Key.
 
 
 # Step 5: Release and update code on mobiles:
-## 5.1: We use bellow command to update current code to Mobile Center, after that it will update applcation on mobile which set Staging Deployment Key: 
+## 5.1: We use bellow command to upload current code to Mobile Center. After that it will update applcation on mobiles which are set with Staging Deployment Key: 
 
-- Upload code for current version: 
+`code-push release-react MyApp android`          (Upload code for current app version)
 
-`code-push release-react MyApp android`
-
-- Upload code for version  1.2: 
-
-`code-push release VaniCodePushDemo android 1.2`
-
-Note: We need to make sure that node server is runnning ( `react-native start` ) to run update current code. 
+Note: 
+- We need to make sure that node server is runnning ( `react-native start` ) to run update current code. 
+- The app version in mobiles must be same with code-push app version.
 
 ## 5.2: To update applcation on mobile which set Productuin Deployment Key, we need to move code from Staging to Production branch with:
 
