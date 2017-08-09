@@ -26,24 +26,35 @@ After that, we can check it with bellow command:
 ![text alt](https://raw.githubusercontent.com/gitvani/code-push-demo/master/images/code-push-02.1.png)
 
 # Step 4: Config Moble App
-## 4.1: Find Staging Key and Production Key by bellow command: 
+## 4.1: Find Staging & Production Deployment Key by bellow command: 
 
-`code-push deployment list VaniCodePushDemo -k`
+`code-push deployment list MyApp -k`
+
+![text alt](https://raw.githubusercontent.com/gitvani/code-push-demo/master/images/code-push-03.png)
+
+Tip: For simple, we should use only the Staging Deployment Key.
 
 
-Some useful command: 
-http://cmichel.io/code-push-cheat-sheet/
+# Step 5: Release and update code on mobiles:
+## 5.1: We use bellow command to update current code to Mobile Center, after that it will update applcation on mobile which set Staging Deployment Key: 
 
+- Upload code for current version: 
 
+`code-push release-react MyApp android`
 
-code-push release [appName] [updateContentsPath] [targetBinaryVersion]
-
-example:
-
-`code-push release-react VaniCodePushDemo android`
+- Upload code for version  1.2: 
 
 `code-push release VaniCodePushDemo android 1.2`
 
+Note: We need to make sure that node server is runnning ( `react-native start` ) to run update current code. 
+
+## 5.2: To update applcation on mobile which set Productuin Deployment Key, we need to move code from Staging to Production branch with:
+
+`code-push promote MyApp Staging Production`
+
+# More: 
+Some useful command: 
+http://cmichel.io/code-push-cheat-sheet/
 
 
 
