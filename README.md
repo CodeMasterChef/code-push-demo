@@ -17,6 +17,13 @@ or
 
 If you had registed a application in Mobile Center, we need to enable CodePush feature on website: 
 
+![text alt](https://raw.githubusercontent.com/gitvani/code-push-demo/master/images/code-push-01.png)
+
+After that, we can check it with bellow command: 
+
+`code-push app list`
+
+![text alt](https://raw.githubusercontent.com/gitvani/code-push-demo/master/images/code-push-02.png)
 
 
 Some useful command: 
