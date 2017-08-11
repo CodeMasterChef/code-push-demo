@@ -13,7 +13,7 @@ If you did not created a app in Mobile Center, run bellow command to create new 
 
 or 
 
-`code-push app add MyApp ios react-native'
+`code-push app add MyApp ios react-native`
 
 If you had registed a application in Mobile Center, we need to enable CodePush feature on website: 
 
@@ -35,12 +35,13 @@ After that, we can check it with bellow command:
 Tip: For simple, we should use only the Staging Deployment Key.
 
 ## 4.2: Install package for React Native project: 
+With newest version of react native, we install newest version of code-push:
 
 `npm install --save react-native-code-push`
 
-**Important**: We must choose correct version of code-push package with react native project. Example: We must install code-push package version 0.3+ for react native version 0.45: 
+**Important**: We must choose correct version of code-push package with react native project. Example: We must install code-push package version 3.0+ for react native version 0.45: 
 
-`npm install --save react-native-code-push@0.3.1-beta`
+`npm install --save react-native-code-push@3.0.1-beta`
 
 You can find the mapping in link : https://github.com/Microsoft/react-native-code-push#supported-react-native-platforms
 
