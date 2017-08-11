@@ -53,7 +53,8 @@ See the `index.android.js`  to get the simplest code:  (https://github.com/gitva
 
 
 ```
-
+...
+import codePush from "react-native-code-push";
 ....
  componentDidMount() {
     var updateDialogOptions = {
